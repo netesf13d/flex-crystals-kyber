@@ -11,6 +11,7 @@ use std::ops::{Add, AddAssign, Sub, SubAssign, Neg, Mul};
 
 
 /// General Kyber Ring element.
+/// An element of Z/pZ[X] / (X^n + 1) where n = 2^(n'-1).
 #[derive(Clone, Debug, PartialEq)]
 pub struct KyberRingElt {
     pub p: u32,
