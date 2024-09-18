@@ -2,11 +2,10 @@ mod algebra;
 
 use std::env;
 
-use crate::algebra::arithmetic::{IntMod, PRIME};
+//use crate::algebra::arithmetic::{IntMod, PRIME};
 
 
 fn main() {
-    println!("Hello, world!");
 
     let args: Vec<String> = env::args().collect();
 
@@ -14,11 +13,15 @@ fn main() {
         println!("Error");
         std::process::exit(1);
     }
+    let a: Vec<i32> = Vec::with_capacity(3);
+    let c: i32 = a.into_iter().sum();
+    println!("{:?}", c);
 
-    let mut x = IntMod {value: 7, modulus: PRIME};
-    x.add(1000);
-    x.add(8000);
-    assert_eq!(x, IntMod {value: 1326, modulus: PRIME});
+/*     let b: i32 = 25;
+    let c: i32 = 42;
+    let a: i32 = &b + &c;
+    println!("{}", a); */
+
 
     
 
