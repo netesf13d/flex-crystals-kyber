@@ -1,6 +1,6 @@
-# CRYSTALS - Kyber
+# Flexible CRYSTALS - Kyber
 
-A Rust implementation of the key encapsulation mechanism Kyber.
+A generalized and flexible Rust implementation of the key encapsulation mechanism Kyber. The ring parameters can be set somewhat arbitrarily, at the cost of an unoptimized implementation.
 
 
 ## References
